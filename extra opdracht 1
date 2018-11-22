@@ -1,0 +1,36 @@
+
+public class Opdracht1 {
+	
+	    public static void main(String[] args) {
+   		
+	    		Supermarkt boni = new Supermarkt();
+	    		Klant jonah = new Klant();
+	    		jonah.naam= "Jonah ";
+	    		
+//	    		System.out.println(jonah);
+//	    		System.out.println(jonah.porto);
+	    		jonah.boodschapdoen(jonah); 
+	    		boni.boodschapdoen(jonah);
+	    		
+	    		}
+			}
+		class Klant{
+			String naam;
+			Portomonnee porto = new Portomonnee();
+			public void boodschapdoen(Klant klant1) {	
+				}
+			}
+		class Portomonnee{
+			boolean vollePortomonnee = false;
+			}
+		class Supermarkt{
+			void boodschapdoen(Klant jonah) {
+				if(jonah.porto.vollePortomonnee) {
+					System.out.println("je kan boodschappen doen vandaag");
+					
+				}else
+					System.out.println("je hebt geen geld om boodschappen te doen vandaag");	
+				
+	    		}
+	    	} 		
+		
